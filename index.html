@@ -1,95 +1,106 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 场景图数据集</title>
-    <style>
-        body {
-            font-family: "Arial", sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-        .container {
-            max-width: 900px;
-            margin: 50px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            font-size: 28px;
-        }
-        p {
-            font-size: 18px;
-            text-align: justify;
-        }
-        .image-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .image-gallery img {
-            width: 30%;
-            height: auto;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-        }
-        .download {
-            text-align: center;
-            margin-top: 30px;
-        }
-        .download a {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 18px;
-            background: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-        .download a:hover {
-            background: #0056b3;
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 10px;
-            font-size: 14px;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ReCon1M-Dataset</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  </head>
 
-    <div class="container">
-        <h1>AI 场景图数据集</h1>
-        <p>
-            本数据集用于 AI 场景图生成研究，包含高质量标注图像和详细的关系数据。
-            适用于计算机视觉、自然语言处理等多个研究领域，支持目标检测、场景理解等任务。
-        </p>
+  <!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="title is-1 publication-title"><font color=Black>ReCon1M: A Large-Scale Benchmark Dataset for Relation Comprehension in Remote Sensing Imagery</h1>
+            <!-- <h1>:Leveraging the Prior of Diffusion Models</h1> -->
+            <!-- <h1> for Image Interpolation with Large Motion</h1> -->
+            <hr>
+            <h6><a>Qiwei Yan</a>, 
+                <a>Chubo Deng</a>,
+                <a>Chenglong Liu</a>,
+                <a>Zhongyan Hou</a>,
+                <a>Xiaorui Liu</a>,
+                <a>Yi Jiang</a>,
+                <a>Wanxuan Lu</a>,<br>
+                <a>Fanglong Yao</a>,
+                <a>Xiaoyu Liu</a>,
+                <a>Lingxiang Hao</a>,
+                <a>Hongfeng Yu</a>,
+                <a>Xian Sun</a>,
+            </h6>
+            <p><sup>1</sup>Aerospace Information Research Institute, Chinese Academy
+              of Sciences &nbsp;&nbsp; 
+               <sup>2</sup>University of Chinese Academy of Sciences</p>
 
-        <!-- 图片展示 -->
-        <div class="image-gallery">
-            <img src="images/sample1.jpg" alt="示例图片 1">
-            <img src="images/sample2.jpg" alt="示例图片 2">
-            <img src="images/sample3.jpg" alt="示例图片 3">
+            </div>
+          </div>
         </div>
-
-        <!-- 下载链接 -->
-        <div class="download">
-            <a href="https://pan.baidu.com/s/你的链接" target="_blank">📥 下载数据集</a>
-        </div>
-
+      </div>
     </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="text-justify">ReCon1M is the first million-level relation annotation dataset specifically designed for Scene Graph Generation (SGG) in remote sensing imagery. our dataset is built upon FAIR1M and comprises 22,262 images. It includes annotations for 873,761 object bounding boxes across 60 categories, and 1,052,244 relation triplets across 59 categories based on these bounding boxes.
+</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+<!--             <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                  <source src="images/teaser_no_audio.mp4" type="video/mp4">
+              </video> -->
+              <img class="img-fluid d-block mx-auto" src="images/example.png" style="width: 70%;">
+              <!-- <br><br> -->
+          <p class="text-justify">  </p>
+          <p class="text-center">Example of the ReCon1M dataset. 
+</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- 下载数据集 -->
+  <section id="download">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Download ReCon1M Dataset</h3>
+          <hr style="margin-top:0px">
+          <p class="text-justify">
+            Please refer to the provided links below to access the dataset and related files (Access code: ws1v).
+          </p>
+          
+          <!-- 百度网盘下载 -->
+          <div class="row justify-content-center">
+            <div class="column">
+              <p class="mb-3">
+                <a class="btn btn-primary btn-lg" href="https://pan.baidu.com/s/1TJruqwH_dLb0wV_LquOBYg" target="_blank">
+                  <i class="fa fa-download"></i> Download from Baidu Cloud
+                </a>
+              </p>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  
 
 </body>
 </html>
